@@ -26,13 +26,29 @@
     footer {
       background-color: darkgray;
       color: white;
-      padding: 20px 0;
+      padding: 25px 0;
     }
 
     body {
       font-family: 'Optima', 'Segoe UI', sans-serif;
-      /* overflow-x: hidden; */
+      overflow-x: hidden;
     }
+
+    /* #table-edge-left {
+        border-top-left-radius: 10px;
+    }
+
+    #table-edge-right {
+        border-top-right-radius: 10px;
+    } */
+
+    .carousel-control-next, .carousel-control-prev {
+      background-color: rgb(27, 27, 27);
+    }
+
+    /* tr {
+      width: min-content;
+    } */
   </style>
 </head>
 
@@ -70,53 +86,60 @@
   </header>
 
   <br>
+  <h1 style="text-align: center;">Floofy Cat Hours</h1>
+  <hr>
+  <section>
+    <h2 style="text-align: center;">Characteristics Seen in Maine Coons</h2>
+    <div class="table-responsive">
+      <table class="table table-hover table-bordered" style="margin:auto; width: 50%;">
+        <thead>
+          <tr class="thead-dark">
+            <th>Markings</th>
+            <th>Coat Colors</th>
+            <th>Eye Colors</th>
+            <th>Weights (lbs)</th>
+            <th>Traits</th>
+          </tr>
+        </thead>
 
-  <!-- <caption>Title</caption> -->
-  <caption class="text-center">Characteristics Seen in Maine Coons</caption>
-  <!-- <div class="table-responsive-med"> -->
-    <table class="table table-hover table-bordered" style="margin:auto; width: 75%; overflow: scroll;">
-      <thead>
-        <tr class="thead-dark">
-          <th>Markings</th>
-          <th>Coat Colors</th>
-          <th>Eye Colors</th>
-          <th>Weights (lbs)</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>M on forehead</td>
-          <td>Brown</td>
-          <td>Yellow</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>Stripes (mainly)</td>
-          <td>Orange</td>
-          <td>Green</td>
-          <td>15</td>
-        </tr>
-        <tr>
-          <td>Fluffy paws and tail</td>
-          <td>Gray</td>
-          <td>Copper</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>Long whiskers</td>
-          <td>Black</td>
-          <td>Gold</td>
-          <td>12</td>
-        </tr>
-      </tbody>
-    </table>
-  <!-- </div> -->
+        <tbody>
+          <tr>
+            <td>M on forehead</td>
+            <td>Brown</td>
+            <td>Yellow</td>
+            <td>10</td>
+            <td>Likes water</td>
+          </tr>
+          <tr>
+            <td>Stripes (mainly)</td>
+            <td>Orange</td>
+            <td>Green</td>
+            <td>15</td>
+            <td>Chirpy sounds</td>
+          </tr>
+          <tr>
+            <td>Fluffy paws and tail</td>
+            <td>Gray</td>
+            <td>Copper</td>
+            <td>8</td>
+            <td>Laid-back</td>
+          </tr>
+          <tr>
+            <td>Long whiskers</td>
+            <td>Black</td>
+            <td>Gold</td>
+            <td>12</td>
+            <td>Dog-like</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
   <br>
   <hr>
   <section>
-    <h1 class="text-center">Picture Gallery</h1>
+    <h2 class="text-center">Picture Gallery</h2>
     <div class="text-center">
       <p>Click to enlarge!</p>
       <img src="images/cat1.jpg" alt="mainecoon" class="img-thumbnail" id="img-modal" width="200" height="220"
@@ -144,7 +167,7 @@
     <br>
 
     <div class="text-center">
-      <p>Carousel</p>
+      <h3>Carousel</h3>
     </div>
     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -157,19 +180,19 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block mx-auto w-25 rounded" src="/images/macy2.png" alt="First slide">
+          <img class="d-block mx-auto rounded" src="/images/macy5.jpg" alt="First slide" width="400px" height="400px">
         </div>
         <div class="carousel-item">
-          <img class="d-block mx-auto w-25 rounded" src="images/macy2.png" alt="Second slide">
+          <img class="d-block mx-auto rounded" src="images/macy2.png" alt="Second slide" width="400px" height="400px">
         </div>
         <div class="carousel-item">
-          <img class="d-block mx-auto w-25 rounded" src="images/macy3.JPG" alt="Third slide">
+          <img class="d-block mx-auto rounded" src="images/macy3.JPG" alt="Third slide" width="400px" height="400px">
         </div>
         <div class="carousel-item">
-          <img class="d-block mx-auto w-25 rounded" src="images/macy4.jpg" alt="Fouth slide">
+          <img class="d-block mx-auto rounded" src="images/macy4.jpg" alt="Fouth slide" width="400px" height="400px">
         </div>
         <div class="carousel-item">
-          <img class="d-block mx-auto w-25 rounded" src="images/macy5.jpg" alt="Fifth slide">
+          <img class="d-block mx-auto rounded" src="images/macy5.jpg" alt="Fifth slide" width="400px" height="400px">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -183,14 +206,13 @@
     </div>
   </section>
 
-
   <br>
 
   <!-- Footer -->
   <footer>
     <div class="row justify-content-center">
       <div class="col-sm-4 text-center">&copy; Arianna Loucks | 2022</div>
-      <div class="col-sm-4 text-center">U+1F431 Cats are cool!</div>
+      <div class="col-sm-4 text-center">&#128049  Cats are cool!</div>
     </div>
   </footer>
 
